@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const headerContainer = document.querySelector('header');
 
   // Fetch header.html content
-  fetch('http://localhost:8080/header.html')
+  fetch('https://localhost:8080/header.html')
       .then(response => response.text())
       .then(html => {
           // Append the header content to the container
