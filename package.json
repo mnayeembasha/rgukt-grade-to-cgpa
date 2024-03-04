@@ -1,0 +1,20 @@
+{
+  "name": "rgukt-grade-to-cgpa",
+  "version": "1.0.0",
+  "description": "This web application calculates the Cumulative Grade Point Average (CGPA) for RGUKT University - CSE students based on their grades in different subjects.",
+  "main": "server.js",
+  "engines":{
+    "node":"18.16.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build step is not required for this project\""
+  },
+  "keywords": [],
+  "author": "Nayeem Basha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

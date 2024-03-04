@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&family=DM+Serif+Display:ital@0;1&display=swap");
+:root{
+    --light-mode:#fff;
+    --header-light-mode:rgb(253,253,235);
+    --main-light-mode:rgb(239, 239, 240);
+    --light-mode-op6:rgba(255,255,255,0.6);
+    --light-mode-op7:rgba(255,255,255,0.7);
+    --light-mode-op8:rgba(255,255,255,0.8);
+    --dark-mode:rgb(3,3,9);
+    --header-dark-mode:#121212;
+    --dark-mode-op1:#000;
+    --dark-mode-op6:rgba(0,0,0,0.6);
+    --dark-mode-op7:rgba(0,0,0,0.7);
+    --dark-mode-op8:rgba(0,0,0,0.8);
+    --icon-dark-bg:rgb(0,0,0,0.95);
+    --icon-light-bg:rgb(206, 203, 213);
+    --item-box-shadow-color:rgb(204, 198, 198);
+}
+.light-mode-colors{
+    --header-dark-mode:rgb(253,253,235);
+    --light-mode:rgb(3,3,9);
+    --light-mode-op7:rgba(0,0,0,0.7);
+    --light-mode-op8:rgba(0,0,0,0.8);
+    --dark-mode:rgb(239, 239, 240);
+    --dark-mode-op1:#fff;
+    --icon-dark-bg:rgb(206, 203, 213);
+}
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    color:var(--light-mode);
+}
+*::selection{
+    background-color: var(--dark-mode-op8);
+}
+header .logo-text::selection,footer .copyright-text::selection{
+    background: none;
+}
+body{
+    background-color: var(--dark-mode);
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Styling the Header*/
+header{
+    width:100%;
+    height:13vh;
+    position:fixed;
+    top:0;
+    background-color: var(--header-dark-mode);
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    width:100%;
+    height:12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.logo div{
+    display:inline-block;
+}
+.logo .image,.image img{
+    display: flex;
+    align-items: center;
+    width:2.5vw;
+    height:2.5vw;
+}
+.logo .image{
+    background-color:var(--header-dark-mode);
+}
+.logo .logo-text{
+    font-family: 'Poppins' !important;
+    font-weight:bolder;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color:var(--light-mode);
+    color: transparent;
+    background-clip:text;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+}
+.toggle{
+    margin-right: 1rem;
+}
+.bi--moon-stars-fill {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg:url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M361.5%201.2c5%202.1%208.6%206.6%209.6%2011.9L391%20121l107.9%2019.8c5.3%201%209.8%204.6%2011.9%209.6s1.5%2010.7-1.6%2015.2L446.9%20256l62.3%2090.3c3.1%204.5%203.7%2010.2%201.6%2015.2s-6.6%208.6-11.9%209.6L391%20391%20371.1%20498.9c-1%205.3-4.6%209.8-9.6%2011.9s-10.7%201.5-15.2-1.6L256%20446.9l-90.3%2062.3c-4.5%203.1-10.2%203.7-15.2%201.6s-8.6-6.6-9.6-11.9L121%20391%2013.1%20371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7%201.6-15.2L65.1%20256%202.8%20165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6%2011.9-9.6L121%20121%20140.9%2013.1c1-5.3%204.6-9.8%209.6-11.9s10.7-1.5%2015.2%201.6L256%2065.1%20346.3%202.8c4.5-3.1%2010.2-3.7%2015.2-1.6zM160%20256a96%2096%200%201%201%20192%200%2096%2096%200%201%201%20-192%200zm224%200a128%20128%200%201%200%20-256%200%20128%20128%200%201%200%20256%200z%22%2F%3E%3C%2Fsvg%3E%0A");
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color:var(--light-mode);
+}
+.light-mode-colors .bi--moon-stars-fill{
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='%23000'%3E%3Cpath d='M6 .278a.77.77 0 0 1 .08.858a7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316a.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278'/%3E%3Cpath d='M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z'/%3E%3C/g%3E%3C/svg%3E");
+}
+/*Styling the main Content*/
+main{
+    flex:1;
+    min-height: calc(100vh - 15vh - 15vh);
+    text-align:center;
+    background-color: var(--dark-mode);
+}
+
+.scroll-text{
+    width: 100%;
+    text-align: center;
+}
+.scroll-text p{
+    font-size: 1.1rem;
+    color:var(--light-mode-op8);
+}
+.scroll-text p a{
+    font-size: 1rem;
+}
+.scroll-text h1{
+    margin:1rem 0;
+    line-height: 2.5rem;
+    color: transparent;
+    background-clip: text;
+    background-color: #ffff45;
+    background-image: linear-gradient(315deg, #ffff45 0%, #ff5858 74%);
+
+}
+#branch{
+    color: transparent;
+    background-clip: text;
+    background-color: #ffff45;
+    background-image: linear-gradient(315deg, #ffff45 0%, #ff5858 74%);
+}
+.scroll-text h2{
+    font-size: 1.9rem;
+    color:var(--light-mode-op8);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding-top: 0.5rem;
+    background-color: var(--dark-mode);
+}
+.container .item{
+    width:20vw;
+    height:18vw;
+    margin:1.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: rgb(2, 2, 21);
+}
+.item:hover{
+    box-shadow: 0px 0px 20px var(--item-box-shadow-color);
+}
+.item .imgdiv,.imgdiv img{
+    width:100%;
+    height:80%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.imgdiv img{
+    height:100%;
+}
+.item .contents{
+    font-family: 'Arvo' !important;
+    font-weight:550;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width:100%;
+    height:20%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(2, 2, 21);
+    color:var(--light-mode-op6); */
+
+    background: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+    background-clip: text;
+    color: transparent;
+
+
+}
+/*Styling the footer*/
+footer{
+    width:100%;
+    height:15vh;
+    margin-top: auto;
+    font-size:1.4rem;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    text-align: center;
+    background-color: var(--header-dark-mode);
+    position: relative;
+    bottom: 0;
+}
+footer .copyright-text{
+    color:var(--dark-mode-op1);
+    color:var(--light-mode);
+}
+.fa-heart{
+    font-size: 1em;
+    color: red;
+}
+    /*Styling the Social Media icons*/
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.social-media .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:all 0.7s ease-in-out;
+    background-color: var(--icon-light-bg);
+    background-color: var(--icon-dark-bg);
+    width:3.2vw;
+    height:3.2vw;
+    margin: 0.2rem 0.25rem;
+    background: none;
+}
+.social-media .icon i{
+    color:var(--light-mode);
+}
+.icon:hover{
+    color:var(--dark-mode-op1);
+    background-color: var(--light-mode);
+}
+.social-media .icon:hover i{
+    color:var(--light-mode);
+    color:var(--dark-mode-op1);
+}
+.social-media i{
+    font-size: 1.5rem ;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:1050px) and (min-width:833px){
+    .social-media .icon{
+        width:4.5vw;
+        height:4.5vw;
+    }
+    .social-media .icon i{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:832px) and (min-width:501px){
+    header{
+        height:12vh;
+    }
+    .navbar{
+        height:12vh;
+    }
+    body{
+        padding-top: 12vh;
+    }
+    /* main{
+        min-height: calc(100vh);
+        margin-top:0rem;
+    } */
+    .container .item{
+        width:25vw;
+        height:40vh;
+        height:25vw;
+    }
+    .image,.image img{
+        width:3.5vw;
+        height:4vw;
+    }
+    .logo .logo-text{
+        font-size:1.5rem;
+    }
+    .scroll-text{
+        text-align: center;
+    }
+    .scroll-text p{
+        font-size: 1rem;
+    }
+    .scroll-text h2{
+        font-size: 1.4rem;
+    }
+    .item .contents{
+        font-size: 1.5rem;
+    }
+    .bi--moon-stars-fill{
+        margin-top:0.5rem;
+        font-size:1.4rem;
+    }
+    footer{
+        font-size: 1.3rem;
+    }
+    .social-media .icon{
+        width:5.2vw;
+        height:5.2vw;
+    }
+    .social-media i{
+        font-size: 1.3rem;
+    }
+
+}
+@media only screen and (max-width:650px) and (min-width:501px){
+    .social-media .icon{
+        width:6.2vw;
+        height:6.2vw;
+    }
+    .social-media i{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:500px) and (min-width:350px){
+    header{
+        height:10vh;
+    }
+    .navbar{
+        height:10vh;
+    }
+    body{
+        padding-top: 10vh;
+    }
+    .container .item{
+        width:40vw;
+        height:40vw;
+    }
+    /*Styling the logo*/
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo .image,.logo .image img{
+        width:5vw;
+        height:5vw;
+    }
+    .logo .logo-text{
+        margin-left: 0.2rem;
+        text-align: center;
+        font-size:1.2rem;
+    }
+
+
+    .scroll-text h2{
+        font-size: 1.4rem;
+    }
+    .bi--moon-stars-fill{
+        margin-top:0.5rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .item .contents{
+        font-size: 1.8rem;
+    }
+    footer{
+        height:13vh;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media .icon{
+        width:7.3vw;
+        height:7.3vw;
+    }
+    .social-media i{
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width:415px) and (min-width:391px){
+    .container .item{
+        width:39vw;
+        height:39vw;
+    }
+}
+@media only screen and (max-width:390px){
+    header{
+        height:9vh;
+    }
+    .navbar{
+        height:9vh;
+    }
+    body{
+        padding-top: 10vh;
+    }
+    header{
+        height: 10vh;
+    }
+    .navbar{
+        height:10vh;
+    }
+    main{
+        margin-top: 0;
+        flex:1;
+        min-height: calc(100vh - 10vh - 10vh);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    main .container{
+        flex:1;
+    }
+    main .scroll-text{
+        width:100%;
+        text-align: center;
+    }
+    .scroll-text h2{
+        font-size:1.25rem;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo .logo-text{
+        margin-left:0.2rem;
+        font-size:1.2rem;
+        text-align: center;
+    }
+    .logo .image,.logo .image img{
+        width:5.5vw;
+        height:5.5vw;
+    }
+
+    .bi--moon-stars-fill {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        font-size:1rem;
+    }
+    .container .item{
+        width:65vw;
+        height:65vw;
+    }
+    footer{
+        height:12vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer .copyright-text{
+        font-size: 1rem;
+    }
+    .social-media .icon{
+        width:9vw;
+        height:9vw;
+        margin-top:0.15rem;
+        margin-bottom: 0.15rem;
+    }
+    footer .social-media i{
+        font-size: 1.1rem !important;
+    }
+}
