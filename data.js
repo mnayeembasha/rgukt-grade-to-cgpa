@@ -261,52 +261,114 @@ const che = {
 }
 
 const puc={
-    p1s1:{
-        subjects:["english",
-        "maths",
-        "physics",
-        "phy-lab",
-        "chemistry",
-        "chem-lab",
-        "telugu",
-        "it",
-        "it-lab"],
-        credits: [3,5,4,1,4,1,3,2,1]
+    mpc:{
+        p1s1:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "it",
+            "it-lab"],
+            credits: [4,5,4,1,4,1,3,2,1]
+        },
+        p1s2:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "latex",
+            "latex-lab"],
+            credits: [4,5,4,1,4,1,3,2,1]
+        },
+        p2s1:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "web-design",
+            "web-design-lab",],
+            credits: [4,5,4,1,4,1,3,2,1]
+        },
+        p2s2:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "python",
+            "python-lab",],
+            credits: [4,5,4,1,4,1,3,2,1]
+        }
     },
-    p1s2:{
-        subjects:["english",
-        "maths",
-        "physics",
-        "phy-lab",
-        "chemistry",
-        "chem-lab",
-        "telugu",
-        "latex",
-        "latex-lab"],
-        credits: [3,5,4,1,4,1,3,2,1]
-    },
-    p2s1:{
-        subjects:["english",
-        "maths",
-        "physics",
-        "phy-lab",
-        "chemistry",
-        "chem-lab",
-        "telugu",
-        "web-design",
-        "web-design-lab",],
-        credits: [3,5,4,1,4,1,3,2,1]
-    },
-    p2s2:{
-        subjects:["english",
-        "maths",
-        "physics",
-        "phy-lab",
-        "chemistry",
-        "chem-lab",
-        "telugu",
-        "python",
-        "python-lab",],
-        credits: [3,5,4,1,4,1,3,2,1]
+    mbipc:{
+        p1s1:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "it",
+            "it-lab",
+            "biology",
+            "biology-lab"
+        ],
+            credits: [4,5,4,1,4,1,3,2,1,3,1]
+        },
+        p1s2:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "latex",
+            "latex-lab",
+            "biology",
+            "biology-lab"
+        ],
+            credits: [4,5,4,1,4,1,3,2,1,3,1]
+        },
+        p2s1:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "web-design",
+            "web-design-lab",
+            "biology",
+            "biology-lab"],
+            credits: [4,5,4,1,4,1,3,2,1,3,1]
+        },
+        p2s2:{
+            subjects:["english",
+            "maths",
+            "physics",
+            "phy-lab",
+            "chemistry",
+            "chem-lab",
+            "telugu",
+            "python",
+            "python-lab",
+            "biology",
+            "biology-lab"],
+            credits: [4,5,4,1,4,1,3,2,1,3,1]
+        }
     }
 }
