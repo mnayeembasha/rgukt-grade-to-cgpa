@@ -4,7 +4,7 @@ This web application calculates the Cumulative Grade Point Average (CGPA) for RG
 
 ## How to Use
 
-1. Open the [Grade to CGPA Converter](https://mnayeembasha.github.io/grade-to-cgpa) in your web browser.
+1. Open the [Grade to CGPA Converter](https://rgukt-gradetocgpa-converter.onrender.com) in your web browser.
 2. Enter the grades for each subject from the dropdown menus.
 3. Click the "Calculate CGPA" button.
 4. The calculated CGPA will be displayed on the webpage.
