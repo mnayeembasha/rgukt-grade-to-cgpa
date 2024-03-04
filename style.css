@@ -279,13 +279,8 @@ footer .copyright-text{
     body{
         padding-top: 12vh;
     }
-    /* main{
-        min-height: calc(100vh);
-        margin-top:0rem;
-    } */
     .container .item{
         width:25vw;
-        height:40vh;
         height:25vw;
     }
     .image,.image img{
@@ -293,7 +288,7 @@ footer .copyright-text{
         height:4vw;
     }
     .logo .logo-text{
-        font-size:1.5rem;
+        font-size:2rem;
     }
     .scroll-text{
         text-align: center;
@@ -353,16 +348,18 @@ footer .copyright-text{
         align-items: center;
     }
     .logo .image,.logo .image img{
-        width:5vw;
-        height:5vw;
+        width:5.2vw;
+        height:5.2vw;
     }
     .logo .logo-text{
         margin-left: 0.2rem;
         text-align: center;
-        font-size:1.2rem;
+        font-size:1.48rem;
     }
 
-
+    .scroll-text #branch{
+        font-size: 1.3rem;
+    }
     .scroll-text h2{
         font-size: 1.4rem;
     }
@@ -439,6 +436,9 @@ footer .copyright-text{
         margin-left:0.2rem;
         font-size:1.2rem;
         text-align: center;
+    }
+    .scroll-text #branch{
+        font-size: 1rem;
     }
     .logo .image,.logo .image img{
         width:5.5vw;
