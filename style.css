@@ -94,24 +94,30 @@ header{
     background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
 }
 .toggle{
+    /* background-color: #ffff45; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 1rem;
+    width:2.5em;
+    height:2.5em;
 }
 .bi--moon-stars-fill {
-    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    --svg:url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M361.5%201.2c5%202.1%208.6%206.6%209.6%2011.9L391%20121l107.9%2019.8c5.3%201%209.8%204.6%2011.9%209.6s1.5%2010.7-1.6%2015.2L446.9%20256l62.3%2090.3c3.1%204.5%203.7%2010.2%201.6%2015.2s-6.6%208.6-11.9%209.6L391%20391%20371.1%20498.9c-1%205.3-4.6%209.8-9.6%2011.9s-10.7%201.5-15.2-1.6L256%20446.9l-90.3%2062.3c-4.5%203.1-10.2%203.7-15.2%201.6s-8.6-6.6-9.6-11.9L121%20391%2013.1%20371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7%201.6-15.2L65.1%20256%202.8%20165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6%2011.9-9.6L121%20121%20140.9%2013.1c1-5.3%204.6-9.8%209.6-11.9s10.7-1.5%2015.2%201.6L256%2065.1%20346.3%202.8c4.5-3.1%2010.2-3.7%2015.2-1.6zM160%20256a96%2096%200%201%201%20192%200%2096%2096%200%201%201%20-192%200zm224%200a128%20128%200%201%200%20-256%200%20128%20128%200%201%200%20256%200z%22%2F%3E%3C%2Fsvg%3E%0A");
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    background-color:var(--light-mode);
+    width: 100%;
+    height: 100%;
+    background: url('lightmode.svg') no-repeat;
+    background-size: 100%;
+    color: white;
 }
 .light-mode-colors .bi--moon-stars-fill{
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='%23000'%3E%3Cpath d='M6 .278a.77.77 0 0 1 .08.858a7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316a.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278'/%3E%3Cpath d='M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z'/%3E%3C/g%3E%3C/svg%3E");
+    /* --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='%23000'%3E%3Cpath d='M6 .278a.77.77 0 0 1 .08.858a7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316a.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278'/%3E%3Cpath d='M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z'/%3E%3C/g%3E%3C/svg%3E"); */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='%23000'%3E%3Cpath d='M6 .278a.77.77 0 0 1 .08.858a7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316a.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278'/%3E%3Cpath d='M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z'/%3E%3C/g%3E%3C/svg%3E");
+    width: 75%;
+    height: 75%;
 }
 /*Styling the main Content*/
 main{
@@ -303,10 +309,10 @@ footer .copyright-text{
     .item .contents{
         font-size: 1.5rem;
     }
-    .bi--moon-stars-fill{
+    /* .bi--moon-stars-fill{
         margin-top:0.5rem;
         font-size:1.4rem;
-    }
+    } */
     footer{
         font-size: 1.3rem;
     }
@@ -326,6 +332,13 @@ footer .copyright-text{
     }
     .social-media i{
         font-size: 1.2rem;
+    }
+    .logo .logo-text{
+        font-size: 1.5rem;
+    }
+    .toggle,.bi--moon-stars-fill{
+        width:2em;
+        height:2em;
     }
 }
 @media only screen and (max-width:500px) and (min-width:350px){
@@ -364,10 +377,14 @@ footer .copyright-text{
     .scroll-text h2{
         font-size: 1.4rem;
     }
-    .bi--moon-stars-fill{
+    /* .bi--moon-stars-fill{
         margin-top:0.5rem;
         font-size: 1.2rem;
         margin-left: 1rem;
+    } */
+    .toggle,.bi--moon-stars-fill{
+        width:2em;
+        height:2em;
     }
     .item .contents{
         font-size: 1.8rem;
@@ -391,6 +408,9 @@ footer .copyright-text{
     .container .item{
         width:39vw;
         height:39vw;
+    }
+    .logo .logo-text{
+        font-size: 1.25rem;
     }
 }
 @media only screen and (max-width:390px){
@@ -446,11 +466,11 @@ footer .copyright-text{
         height:5.5vw;
     }
 
-    .bi--moon-stars-fill {
+    /* .bi--moon-stars-fill {
         margin-top: 0.5rem;
         margin-left: 0.5rem;
         font-size:1rem;
-    }
+    } */
     .container .item{
         width:65vw;
         height:65vw;
