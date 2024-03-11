@@ -1,50 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+
+// Add an initialization function
+function initializeMode() {
+    const preferredMode = localStorage.getItem('preferredMode');
+    const body = document.body;
+    const toggleIcon = document.querySelector("#toggle-icon");
+
+    if (preferredMode === 'dark') {
+      body.classList.add('light-mode-colors');
+      toggleIcon.title = "Toggle for Dark Mode";
+    }
+
+    // Call the setupHeader function
+    setupHeader();
+  }
+
+  // Call the initialization function
+  initializeMode();
+
+  // Add your existing setupHeader function
+  function setupHeader() {
     let toggleIcon = document.querySelector("#toggle-icon");
-    let items = document.querySelectorAll(".item");
 
-    // Retrieve the mode from localStorage
-    let isLightMode = localStorage.getItem("isLightMode") === "true";
-
-    // Apply the mode on page load
-    applyMode(isLightMode);
-
+    // Check if the toggleIcon element is found
     if (toggleIcon) {
         toggleIcon.addEventListener("click", () => {
-            isLightMode = !isLightMode;
+            document.body.classList.toggle("light-mode-colors");
 
-            // Store the mode in localStorage
-            localStorage.setItem("isLightMode", isLightMode);
+            // Save mode to localStorage
+            const currentMode = document.body.classList.contains('light-mode-colors') ? 'dark' : 'light';
+            localStorage.setItem('preferredMode', currentMode);
 
-            // Dispatch a custom event to notify other pages
-            document.dispatchEvent(new CustomEvent("modeChanged", { detail: isLightMode }));
-
-            applyMode(isLightMode);
+            if (document.body.classList.contains("light-mode-colors")) {
+              toggleIcon.title = "Toggle for Dark Mode";
+              for (item of items) {
+                  item.style.boxShadow = "0px 4px 8px black";
+                  item.addEventListener("mouseover", (event) => {
+                      event.currentTarget.style.boxShadow = "0px 8px 40px black";
+                  });
+                  item.addEventListener("mouseout", (event) => {
+                      event.currentTarget.style.boxShadow = "0px 4px 8px black";
+                  });
+              }
+          } else {
+            toggleIcon.title = "Toggle for Light Mode";
+          }
         });
     }
+  }
 
-    // Listen for the custom event from other pages
-    document.addEventListener("modeChanged", (event) => {
-        isLightMode = event.detail;
-        applyMode(isLightMode);
-    });
-
-    function applyMode(isLightMode) {
-        document.body.classList.toggle("light-mode-colors", isLightMode);
-
-        if (isLightMode) {
-            toggleIcon.title = "Toggle for Dark Mode";
-            for (let item of items) {
-                item.style.boxShadow = "0px 4px 8px black";
-                item.addEventListener("mouseover", (event) => {
-                    event.currentTarget.style.boxShadow = "0px 8px 40px black";
-                });
-                item.addEventListener("mouseout", (event) => {
-                    event.currentTarget.style.boxShadow = "0px 4px 8px black";
-                });
-            }
-        } else {
-            toggleIcon.title = "Toggle for Light Mode";
-        }
-    }
-});
-    
