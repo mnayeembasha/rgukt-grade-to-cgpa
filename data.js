@@ -59,7 +59,7 @@ const mme = {
         credits:[4,4,3,3,3,1.5,1.5,1.5]
     },
     e3s2:{
-        subjects:["mjndt","cme","pe-1","mjndt-lab","cme-lab","mp","english-lab"],
+        subjects:["mjndt","cme","pe-1","mjndt-lab","cme-lab","mini-project","english-lab"],
         credits:[4,3,3,1.5,1.5,2,1.5]
     },
     e4s1:{
@@ -96,7 +96,7 @@ const me = {
         credits:[4,4,4,3,1.5,1.5,1.5,1.5]
     },
     e3s2:{
-        subjects:["or","fem","mefa","pe-1","pe-2","cams-lab","english-lab","si"],
+        subjects:["or","fem","mefa","pe-1","pe-2","cams-lab","english-lab","summer-internship"],
         credits:[4,4,3,3,3,1.5,1.5,3]
     },
     e4s1:{
@@ -129,11 +129,11 @@ const ece = {
         credits:[2.5,4,1.5,4,1.5,4,1.5,4]
     },
     e3s1:{
-        subjects:["cn","coa","english-lab","cs-2","cs-2-lab","mmcn-lab","rfme-lab","mp-i"],
+        subjects:["cn","coa","english-lab","cs-2","cs-2-lab","mmcn-lab","rfme-lab","mini-project(i)"],
         credits:[3,4,1.5,4,1.5,1.5,2.5,1]
     },
     e3s2:{
-        subjects:["english-lab","pdi","elective-1","elective-2","oe-1","oe-2","mp-ii"],
+        subjects:["english-lab","pdi","elective-1","elective-2","oe-1","oe-2","mini-project(ii)"],
         credits:[1.5,1,3,3,3,3,1.5]
     },
     e4s1:{
