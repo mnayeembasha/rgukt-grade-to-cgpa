@@ -21,7 +21,7 @@ const cse = {
         credits:[3,3,3,3,3,1.5,1.5,1.5,1.5]
     },
     e3s2:{
-        subjects:["cns","ai","elective-ii","elective-iii","open-elective-i","english-lab","mp","si"],
+        subjects:["cns","ai","DL(Ele-II)","OOAD(Ele-III)","FOM","english-lab","Mini-Project","Summer-Internship"],
         credits:[4,4,3,3,3,1.5,3,3]
     },
     e4s1:{
